@@ -175,7 +175,7 @@ const HeroSection = () => {
               </button>
 
               <a
-                href="https://onedrive.live.com/download?cid=EE62F3B457974EC7&resid=EE62F3B457974EC7!s20407dc8e5a44498813e96fddbcc275f&authkey=AU8H7fGnCl2a9sM0KWlWXm0"
+                href="/Mehul_Zapadiya_Resume.pdf"
                 download="Mehul_Zapadiya_Resume.pdf"
                 className="group glass glow-border px-4 py-2.5 rounded-lg font-semibold text-sm text-foreground hover:bg-card/60 transition-all duration-300 flex items-center gap-2 whitespace-nowrap"
               >

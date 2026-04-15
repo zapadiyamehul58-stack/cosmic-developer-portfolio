@@ -69,7 +69,7 @@ const ResumeSection = () => {
           {/* Download CTA */}
           <div className="section-fade text-center">
             <a
-              href="https://onedrive.live.com/download?cid=EE62F3B457974EC7&resid=EE62F3B457974EC7!s20407dc8e5a44498813e96fddbcc275f&authkey=AU8H7fGnCl2a9sM0KWlWXm0"
+              href="/Mehul_Zapadiya_Resume.pdf"
               download="Mehul_Zapadiya_Resume.pdf"
               className="inline-flex items-center gap-2 glass glow-border px-8 py-4 font-semibold text-primary hover:bg-primary/10 transition-all glow-sm text-lg"
             >
