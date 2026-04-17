@@ -127,8 +127,9 @@ const EducationExperienceSection = () => {
           className="mt-16 text-center"
         >
           <a
-            href="/Mehul_Zapadiya_Resume.pdf"
-            download="Mehul_Zapadiya_Resume.pdf"
+            href="https://drive.google.com/file/d/1N3vQTstp3PMw1U3M5z4ljzOXRCyR-cDK/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-3 glass-strong glow-border px-8 py-4 rounded-xl font-bold text-foreground hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl overflow-hidden"
           >
             {/* Animated background glow */}
