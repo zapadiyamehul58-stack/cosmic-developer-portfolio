@@ -69,9 +69,10 @@ const ResumeSection = () => {
           {/* Download CTA */}
           <div className="section-fade text-center">
             <a
-              href="https://drive.google.com/file/d/1N3vQTstp3PMw1U3M5z4ljzOXRCyR-cDK/view?usp=sharing"
+              href="https://drive.google.com/uc?export=download&id=1N3vQTstp3PMw1U3M5z4ljzOXRCyR-cDK"
               target="_blank"
               rel="noopener noreferrer"
+              download="Mehul_Zapadiya_Resume.pdf"
               className="inline-flex items-center gap-2 glass glow-border px-8 py-4 font-semibold text-primary hover:bg-primary/10 transition-all glow-sm text-lg"
             >
               <Download size={20} />

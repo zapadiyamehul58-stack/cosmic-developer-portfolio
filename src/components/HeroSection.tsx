@@ -175,9 +175,10 @@ const HeroSection = () => {
               </button>
 
               <a
-                href="https://drive.google.com/file/d/1N3vQTstp3PMw1U3M5z4ljzOXRCyR-cDK/view?usp=sharing"
+                href="https://drive.google.com/uc?export=download&id=1N3vQTstp3PMw1U3M5z4ljzOXRCyR-cDK"
                 target="_blank"
                 rel="noopener noreferrer"
+                download="Mehul_Zapadiya_Resume.pdf"
                 className="group glass glow-border px-4 py-2.5 rounded-lg font-semibold text-sm text-foreground hover:bg-card/60 transition-all duration-300 flex items-center gap-2 whitespace-nowrap"
               >
                 <Download size={15} className="text-primary" />

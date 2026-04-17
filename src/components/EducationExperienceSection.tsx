@@ -127,9 +127,10 @@ const EducationExperienceSection = () => {
           className="mt-16 text-center"
         >
           <a
-            href="https://drive.google.com/file/d/1N3vQTstp3PMw1U3M5z4ljzOXRCyR-cDK/view?usp=sharing"
+            href="https://drive.google.com/uc?export=download&id=1N3vQTstp3PMw1U3M5z4ljzOXRCyR-cDK"
             target="_blank"
             rel="noopener noreferrer"
+            download="Mehul_Zapadiya_Resume.pdf"
             className="group relative inline-flex items-center gap-3 glass-strong glow-border px-8 py-4 rounded-xl font-bold text-foreground hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl overflow-hidden"
           >
             {/* Animated background glow */}
@@ -149,7 +150,7 @@ const EducationExperienceSection = () => {
               <Calendar size={18} />
             </div>
           </a>
-          <p className="mt-4 text-muted-foreground text-xs font-mono uppercase tracking-[0.2em]">PDF Formate • Direct Download</p>
+          <p className="mt-4 text-muted-foreground text-xs font-mono uppercase tracking-[0.2em]">PDF Format • Direct Download</p>
         </motion.div>
       </div>
     </section>
