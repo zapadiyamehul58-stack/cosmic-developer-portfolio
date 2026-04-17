@@ -63,7 +63,7 @@ const FloatingIcon = ({ icon: Icon, color, bg, orbitRadius, speed, delay, label 
     <div
       className="absolute z-20 group cursor-pointer"
       style={{
-        transform: `translate(${pos.x}px, ${pos.y}px)`,
+        transform: ["translate(", pos.x, "px, ", pos.y, "px)"].join(""),
         opacity: mounted ? 1 : 0,
         transition: "opacity 0.6s ease",
       }}
@@ -74,11 +74,11 @@ const FloatingIcon = ({ icon: Icon, color, bg, orbitRadius, speed, delay, label 
         className="relative"
       >
         {/* Pulse ring */}
-        <div className={`absolute -inset-1 rounded-xl ${bg} opacity-0 group-hover:opacity-25 group-hover:scale-125 transition-all duration-500 blur-[6px]`} />
+        <div className={"absolute -inset-1 rounded-xl " + bg + " opacity-0 group-hover:opacity-25 group-hover:scale-125 transition-all duration-500 blur-[6px]"} />
         {/* Card — compact */}
         <div className="relative glass p-1.5 rounded-xl shadow-lg border border-white/10 bg-[#080d1a]/90 backdrop-blur-md z-10">
-          <Icon className={`${color} drop-shadow-sm`} size={14} />
-          <span className={`absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full ${bg} animate-pulse`} />
+          <Icon className={color + " drop-shadow-sm"} size={14} />
+          <span className={"absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full " + bg + " animate-pulse"} />
         </div>
         {/* Tooltip */}
         <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-[7px] font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-1 group-hover:translate-y-0 text-white bg-black/80 px-1.5 py-0.5 rounded backdrop-blur-sm border border-white/10 z-30 pointer-events-none">
