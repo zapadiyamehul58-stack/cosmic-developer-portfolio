@@ -12,21 +12,21 @@ const ROLES = [
 
 const TECH_ICONS = [
   // Inner orbit
-  { icon: Code2,    label: "Python",       color: "text-green-400",   bg: "bg-green-500",    orbitRadius: 155, speed: 0.006,  delay: 0     },
-  { icon: Globe,    label: "HTML / CSS",   color: "text-orange-400",  bg: "bg-orange-500",   orbitRadius: 155, speed: 0.006,  delay: 3.14  },
+  { icon: Code2, label: "Python", color: "text-green-400", bg: "bg-green-500", orbitRadius: 155, speed: 0.006, delay: 0 },
+  { icon: Globe, label: "HTML / CSS", color: "text-orange-400", bg: "bg-orange-500", orbitRadius: 155, speed: 0.006, delay: 3.14 },
   // Second orbit
-  { icon: Layout,   label: "React",        color: "text-cyan-400",    bg: "bg-cyan-500",     orbitRadius: 200, speed: 0.0045, delay: 0     },
-  { icon: FileCode, label: "JavaScript",   color: "text-yellow-400",  bg: "bg-yellow-500",   orbitRadius: 200, speed: 0.0045, delay: 2.1   },
-  { icon: Github,   label: "GitHub",       color: "text-white",        bg: "bg-gray-500",     orbitRadius: 200, speed: 0.0045, delay: 4.2   },
+  { icon: Layout, label: "React", color: "text-cyan-400", bg: "bg-cyan-500", orbitRadius: 200, speed: 0.0045, delay: 0 },
+  { icon: FileCode, label: "JavaScript", color: "text-yellow-400", bg: "bg-yellow-500", orbitRadius: 200, speed: 0.0045, delay: 2.1 },
+  { icon: Github, label: "GitHub", color: "text-white", bg: "bg-gray-500", orbitRadius: 200, speed: 0.0045, delay: 4.2 },
   // Third orbit
-  { icon: Brain,    label: "AI / ML",      color: "text-purple-400",  bg: "bg-purple-500",   orbitRadius: 248, speed: 0.003,  delay: 0     },
-  { icon: Database, label: "SQL",          color: "text-pink-400",    bg: "bg-pink-500",     orbitRadius: 248, speed: 0.003,  delay: 2.09  },
-  { icon: BarChart2,label: "Pandas",       color: "text-teal-400",    bg: "bg-teal-500",     orbitRadius: 248, speed: 0.003,  delay: 4.18  },
+  { icon: Brain, label: "AI / ML", color: "text-purple-400", bg: "bg-purple-500", orbitRadius: 248, speed: 0.003, delay: 0 },
+  { icon: Database, label: "SQL", color: "text-pink-400", bg: "bg-pink-500", orbitRadius: 248, speed: 0.003, delay: 2.09 },
+  { icon: BarChart2, label: "Pandas", color: "text-teal-400", bg: "bg-teal-500", orbitRadius: 248, speed: 0.003, delay: 4.18 },
   // Outer orbit
-  { icon: Cpu,      label: "TensorFlow",   color: "text-orange-400",  bg: "bg-orange-500",   orbitRadius: 298, speed: 0.002,  delay: 0     },
-  { icon: Server,   label: "Cloud / API",  color: "text-blue-400",    bg: "bg-blue-500",     orbitRadius: 298, speed: 0.002,  delay: 1.57  },
-  { icon: Layers,   label: "Streamlit",    color: "text-red-400",     bg: "bg-red-500",      orbitRadius: 298, speed: 0.002,  delay: 3.14  },
-  { icon: Zap,      label: "Scikit-learn", color: "text-lime-400",    bg: "bg-lime-500",     orbitRadius: 298, speed: 0.002,  delay: 4.71  },
+  { icon: Cpu, label: "TensorFlow", color: "text-orange-400", bg: "bg-orange-500", orbitRadius: 298, speed: 0.002, delay: 0 },
+  { icon: Server, label: "Cloud / API", color: "text-blue-400", bg: "bg-blue-500", orbitRadius: 298, speed: 0.002, delay: 1.57 },
+  { icon: Layers, label: "Streamlit", color: "text-red-400", bg: "bg-red-500", orbitRadius: 298, speed: 0.002, delay: 3.14 },
+  { icon: Zap, label: "Scikit-learn", color: "text-lime-400", bg: "bg-lime-500", orbitRadius: 298, speed: 0.002, delay: 4.71 },
 ];
 
 interface FloatingIconProps {
@@ -214,9 +214,9 @@ const HeroSection = () => {
               className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-[620px] lg:h-[620px] flex items-center justify-center"
             >
               {/* 4 Orbit Rings — each matches an icon orbit radius */}
-              <div className="absolute rounded-full border border-white/[0.06]"   style={{ width: 310,  height: 310  }} />
-              <div className="absolute rounded-full border border-white/[0.08]"   style={{ width: 400,  height: 400  }} />
-              <div className="absolute rounded-full border border-white/[0.06]"   style={{ width: 496,  height: 496  }} />
+              <div className="absolute rounded-full border border-white/[0.06]" style={{ width: 310, height: 310 }} />
+              <div className="absolute rounded-full border border-white/[0.08]" style={{ width: 400, height: 400 }} />
+              <div className="absolute rounded-full border border-white/[0.06]" style={{ width: 496, height: 496 }} />
               <div className="absolute rounded-full border border-dashed border-white/[0.05]" style={{ width: 596, height: 596 }} />
 
               {/* Profile Image */}
