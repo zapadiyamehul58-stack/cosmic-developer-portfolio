@@ -118,6 +118,38 @@ const EducationExperienceSection = () => {
             ))}
           </div>
         </div>
+
+        {/* Download CTA — integrated into the flow */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-16 text-center"
+        >
+          <a
+            href="/Mehul_Zapadiya_Resume.pdf"
+            download="Mehul_Zapadiya_Resume.pdf"
+            className="group relative inline-flex items-center gap-3 glass-strong glow-border px-8 py-4 rounded-xl font-bold text-foreground hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl overflow-hidden"
+          >
+            {/* Animated background glow */}
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-purple-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            
+            <div className="relative flex items-center gap-3">
+              <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                <GraduationCap size={20} className="text-primary" />
+              </div>
+              <div className="text-left">
+                <span className="block text-xs uppercase tracking-widest text-primary font-mono font-bold leading-none mb-1">Portfolio Asset</span>
+                <span className="text-lg">Download Full Resume</span>
+              </div>
+            </div>
+            
+            <div className="ml-4 w-10 h-10 rounded-full bg-foreground/5 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+              <Calendar size={18} />
+            </div>
+          </a>
+          <p className="mt-4 text-muted-foreground text-xs font-mono uppercase tracking-[0.2em]">PDF Formate • Direct Download</p>
+        </motion.div>
       </div>
     </section>
   );
