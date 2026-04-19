@@ -175,7 +175,7 @@ const HeroSection = () => {
               </button>
 
               <a
-                href="https://drive.google.com/uc?export=download&id=1N3vQTstp3PMw1U3M5z4ljzOXRCyR-cDK"
+                href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 download="Mehul_Zapadiya_Resume.pdf"
