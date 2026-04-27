@@ -1,11 +1,10 @@
-import { Layout, Github, ExternalLink } from "lucide-react";
+import { Layout, Github } from "lucide-react";
 
 interface Project {
   title: string;
   desc: string;
   tech: string[];
   githubUrl: string;
-  liveUrl?: string;
   image: string;
   accent: "cyan" | "green" | "purple" | "blue" | "pink";
 }
@@ -16,7 +15,6 @@ const projects: Project[] = [
     desc: "High-speed file sharing with parallel 5MB chunk uploads. Instant download link on upload complete — no login needed.",
     tech: ["TypeScript", "React", "Node.js", "S3"],
     githubUrl: "https://github.com/zapadiyamehul58-stack/india_fileshare",
-    liveUrl: "https://india-fileshare.vercel.app",
     image: "/india_fileshare.png",
     accent: "cyan",
   },
@@ -70,8 +68,6 @@ const accents: Record<AccentKey, {
   tag: string;
   btn: string;
   bar: string;
-  liveBadge: string;
-  liveBtn: string;
   titleHover: string;
 }> = {
   cyan: {
@@ -80,8 +76,6 @@ const accents: Record<AccentKey, {
     tag: "bg-cyan-500/10 text-cyan-400 border-cyan-500/25",
     btn: "group-hover:bg-cyan-500/90 group-hover:text-white group-hover:border-cyan-500",
     bar: "from-cyan-500/0 via-cyan-500 to-cyan-500/0",
-    liveBadge: "bg-cyan-500/20 border-cyan-500/40 text-cyan-400",
-    liveBtn: "bg-green-500/10 text-green-400 border-green-500/25 hover:bg-green-500/20 hover:border-green-400/50",
     titleHover: "group-hover:text-cyan-400",
   },
   green: {
@@ -90,8 +84,6 @@ const accents: Record<AccentKey, {
     tag: "bg-green-500/10 text-green-400 border-green-500/25",
     btn: "group-hover:bg-green-500/90 group-hover:text-white group-hover:border-green-500",
     bar: "from-green-500/0 via-green-500 to-green-500/0",
-    liveBadge: "bg-green-500/20 border-green-500/40 text-green-400",
-    liveBtn: "bg-green-500/10 text-green-400 border-green-500/25 hover:bg-green-500/20 hover:border-green-400/50",
     titleHover: "group-hover:text-green-400",
   },
   purple: {
@@ -100,8 +92,6 @@ const accents: Record<AccentKey, {
     tag: "bg-purple-500/10 text-purple-400 border-purple-500/25",
     btn: "group-hover:bg-purple-500/90 group-hover:text-white group-hover:border-purple-500",
     bar: "from-purple-500/0 via-purple-500 to-purple-500/0",
-    liveBadge: "bg-purple-500/20 border-purple-500/40 text-purple-400",
-    liveBtn: "bg-purple-500/10 text-purple-400 border-purple-500/25 hover:bg-purple-500/20 hover:border-purple-400/50",
     titleHover: "group-hover:text-purple-400",
   },
   blue: {
@@ -110,8 +100,6 @@ const accents: Record<AccentKey, {
     tag: "bg-blue-500/10 text-blue-400 border-blue-500/25",
     btn: "group-hover:bg-blue-500/90 group-hover:text-white group-hover:border-blue-500",
     bar: "from-blue-500/0 via-blue-500 to-blue-500/0",
-    liveBadge: "bg-blue-500/20 border-blue-500/40 text-blue-400",
-    liveBtn: "bg-blue-500/10 text-blue-400 border-blue-500/25 hover:bg-blue-500/20 hover:border-blue-400/50",
     titleHover: "group-hover:text-blue-400",
   },
   pink: {
@@ -120,8 +108,6 @@ const accents: Record<AccentKey, {
     tag: "bg-pink-500/10 text-pink-400 border-pink-500/25",
     btn: "group-hover:bg-pink-500/90 group-hover:text-white group-hover:border-pink-500",
     bar: "from-pink-500/0 via-pink-500 to-pink-500/0",
-    liveBadge: "bg-pink-500/20 border-pink-500/40 text-pink-400",
-    liveBtn: "bg-pink-500/10 text-pink-400 border-pink-500/25 hover:bg-pink-500/20 hover:border-pink-400/50",
     titleHover: "group-hover:text-pink-400",
   },
 };
@@ -162,13 +148,6 @@ const ProjectsSection = () => {
                   {/* Bottom fade overlay so text blends smoothly */}
                   <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-[#080d1a] to-transparent" />
 
-                  {/* Live badge */}
-                  {p.liveUrl && (
-                    <div className={`absolute top-2.5 right-2.5 z-20 flex items-center gap-1.5 backdrop-blur-md px-2.5 py-1 rounded-full border text-[9px] font-bold uppercase tracking-widest ${a.liveBadge}`}>
-                      <span className="w-1.5 h-1.5 rounded-full bg-current animate-pulse" />
-                      Live
-                    </div>
-                  )}
                 </div>
 
                 {/* ── Card Body ── */}
@@ -194,7 +173,7 @@ const ProjectsSection = () => {
                   </div>
 
                   {/* Buttons */}
-                  <div className={`grid gap-2 ${p.liveUrl ? "grid-cols-2" : "grid-cols-1"}`}>
+                  <div className="grid gap-2 grid-cols-1">
                     <a
                       href={p.githubUrl}
                       target="_blank"
@@ -203,16 +182,6 @@ const ProjectsSection = () => {
                     >
                       <Github size={12} /> Get Code
                     </a>
-                    {p.liveUrl && (
-                      <a
-                        href={p.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`inline-flex items-center justify-center gap-1.5 py-2 rounded-xl font-bold text-[11px] transition-all duration-300 border ${a.liveBtn}`}
-                      >
-                        <ExternalLink size={12} /> Live
-                      </a>
-                    )}
                   </div>
                 </div>
 
