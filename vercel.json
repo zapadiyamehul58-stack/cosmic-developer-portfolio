@@ -1,0 +1,9 @@
+{
+    "redirects": [
+        {
+            "source": "/(.*)",
+            "destination": "https://mehulz13-portfolio.vercel.app/$1",
+            "permanent": true
+        }
+    ]
+}
