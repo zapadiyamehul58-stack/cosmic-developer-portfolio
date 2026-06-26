@@ -175,8 +175,8 @@ const HeroSection = () => {
               </button>
 
               <a
-                href="/Mehul_Zapadiya_Resume.pdf"
-                download="Mehul_Zapadiya_Resume.pdf"
+                href="/resume.pdf"
+                download="resume.pdf"
                 className="group glass glow-border px-4 py-2.5 rounded-lg font-semibold text-sm text-foreground hover:bg-card/60 transition-all duration-300 flex items-center gap-2 whitespace-nowrap"
               >
                 <Download size={15} className="text-primary" />
