@@ -15,16 +15,9 @@ const SplashScreen = () => {
         className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[28rem] md:h-[28rem]"
       >
         <img
-          src="/logo.jpg"
+          src="/logo.png"
           alt="Mehul Zapadiya Logo"
           className="w-full h-full object-contain drop-shadow-[0_0_20px_rgba(6,182,212,0.3)]"
-          onError={(e) => {
-            // Fallback in case they save it as logo.png instead
-            const target = e.target as HTMLImageElement;
-            if (target.src.includes('logo.jpg')) {
-              target.src = '/logo.png';
-            }
-          }}
         />
       </motion.div>
     </motion.div>
